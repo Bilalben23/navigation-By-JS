@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let hLink = document.createElement("link")
+        document.head.appendChild(hLink)
+        hLink.rel = "stylesheet"
+        hLink.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+        document.body.style.backgroundColor = "#eee";
+        document.body.style.margin = 0;
+        document.body.style.padding = 0;
+        document.body.style.boxSizing = "border-box";
+        document.body.style.fontFamily = "monospace"
+        document.body.style.fontSize = "1.2em"
+
+        //=====
+
+        let header = document.createElement('header');
+        header.style.backgroundColor = "white";
+        header.style.padding = "8px";
+        header.style.display = "flex";
+        header.style.justifyContent = "space-around";
+        header.style.boxShadow = "1px 1px 10px 1px gray";
+        header.style.position = "fixed";
+        header.style.width = "100%";
+        header.style.top = 0;
+        header.style.right = 0;
+        header.style.left = 0;
+
+
+        document.body.appendChild(header);
+        let logo1 = document.createElement('div');
+        logo1.className = "logo1"
+        let nav = document.createElement('nav');
+        nav.style.width = "40%"
+        let logo2 = document.createElement('div');
+        logo2.style.display = "flex";
+        logo2.style.width = "20%"
+        logo2.style.justifyContent = "space-between";
+        logo2.style.alignItems = "center";
+        logo2.className = "logo2"
+        header.appendChild(logo1);
+        header.appendChild(nav);
+        header.appendChild(logo2);
+
+        //======
+
+        let pLogo1 = document.createElement('p');
+        pLogo1.innerHTML = "Coding"
+        pLogo1.style.textShadow = "1px 1px 2px gray";
+        let spanLogo1 = document.createElement('span');
+        spanLogo1.innerHTML = " Addict"
+        spanLogo1.style.color = "blue"
+        pLogo1.append(spanLogo1)
+        logo1.appendChild(pLogo1);
+
+        //======
+
+        let ul = document.createElement("ul");
+        ul.style.display = "flex";
+        ul.style.width = "100%";
+        ul.style.justifyContent = "space-around";
+
+
+        let li1 = document.createElement("li");
+        let li2 = document.createElement("li");
+        let li3 = document.createElement("li");
+        let li4 = document.createElement("li");
+        let a1 = document.createElement("a");
+        a1.textContent = "Home";
+        li1.appendChild(a1);
+        let a2 = document.createElement("a");
+        a2.textContent = "About";
+        li2.appendChild(a2);
+        let a3 = document.createElement("a");
+        a3.textContent = "Projects";
+        li3.appendChild(a3);
+        let a4 = document.createElement("a");
+        a4.textContent = "Contact";
+        li4.appendChild(a4);
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+        ul.appendChild(li4);
+        nav.appendChild(ul);
+
+        let anchorLinks = document.getElementsByTagName("a");
+        for (a of anchorLinks) {
+            a.style.color = "black";
+            a.style.textDecoration = "none";
+        }
+
+        let listItems = document.getElementsByTagName("li");
+        for (li of listItems) {
+            li.style.listStyle = "none";
+        }
+
+        // = = = = = = = = = =
+
+        let ai1 = document.createElement("a");
+        let i1 = document.createElement("i");
+        i1.className = "fa-brands fa-facebook";
+        ai1.href = "#";
+        ai1.appendChild(i1);
+        let ai2 = document.createElement("a");
+        let i2 = document.createElement("i");
+        i2.className = "fa-brands fa-twitter"
+        ai2.href = "#";
+        ai2.appendChild(i2);
+        let ai3 = document.createElement("a");
+        let i3 = document.createElement("i");
+        i3.className = "fa-brands fa-square-behance";
+        ai3.href = "#";
+        ai3.appendChild(i3);
+        let ai4 = document.createElement("a");
+        let i4 = document.createElement("i");
+        i4.className = "fa-brands fa-linkedin";
+        ai4.href = "#";
+        ai4.appendChild(i4);
+        let ai5 = document.createElement("a");
+        let i5 = document.createElement("i");
+        i5.className = "fa-brands fa-sketch";
+    
+        ai5.href = "#";
+        ai5.appendChild(i5);
+       logo2.appendChild(ai1);
+       logo2.appendChild(ai2);
+       logo2.appendChild(ai3); 
+       logo2.appendChild(ai4);
+       logo2.appendChild(ai5);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
